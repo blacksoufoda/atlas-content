@@ -1,10 +1,8 @@
 {
-  "at": "2026-11-19T19:10:12.898Z",
-  "ok": true,
-  "paused": false,
+  "at": "2026-11-19T19:10:52.905Z",
+  "ok": false,
   "lastGoodAt": "2026-11-19T19:10:12.898Z",
-  "heartbeat": null,
-  "published": [
-    "helm"
+  "errors": [
+    "dado pessoal: tip quando-nao-insistir: e-mail"
   ]
 }

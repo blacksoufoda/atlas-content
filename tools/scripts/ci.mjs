@@ -58,7 +58,8 @@ function main() {
   }
   const head = run(SOURCE, 'rev-parse', 'HEAD');
   const tree = run(SOURCE, 'rev-parse', 'HEAD:content');
-  if (!restoreSha && previous.contentTree === tree && process.env.FORCE !== '1') {
+  const changedNames = lastGood ? run(SOURCE, 'diff', '--name-only', lastGood, head).split('\n').filter((n) => n && !n.startsWith('status/')) : ['*'];
+  if (!restoreSha && changedNames.length === 0 && process.env.FORCE !== '1') {
     console.log('Nada novo em content/ desde a ultima verificacao.');
     return;
   }
@@ -82,7 +83,7 @@ function main() {
   if (errors.length > 0) {
     let revertedTo = '';
     if (lastGood) {
-      run(SOURCE, 'restore', `--source=${lastGood}`, '--staged', '--worktree', '--', '.');
+      run(SOURCE, 'read-tree', '-u', '--reset', lastGood);
       revertedTo = lastGood;
     }
     const lastFailure = { at, sourceSha: head, errors: errors.slice(0, 20), revertedTo };

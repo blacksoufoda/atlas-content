@@ -1,8 +1,13 @@
 {
-  "at": "2026-11-19T19:14:41.653Z",
+  "at": "2026-11-19T20:20:10.247Z",
   "ok": true,
   "paused": false,
-  "lastGoodAt": "2026-11-19T19:14:41.653Z",
-  "heartbeat": null,
+  "lastGoodAt": "2026-11-19T20:20:10.247Z",
+  "heartbeat": {
+    "schema": "atlas-content-heartbeat-v1",
+    "lastRunAt": "2026-11-19T20:18:18Z",
+    "summary": "Teste manual de acesso da Luna ao GitHub.",
+    "changed": false
+  },
   "published": []
 }

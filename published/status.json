@@ -1,10 +1,8 @@
 {
-  "at": "2026-11-19T19:13:24.356Z",
+  "at": "2026-11-19T19:13:56.722Z",
   "ok": true,
-  "paused": false,
-  "lastGoodAt": "2026-11-19T19:13:24.356Z",
+  "paused": true,
+  "lastGoodAt": "2026-11-19T19:13:56.722Z",
   "heartbeat": null,
-  "published": [
-    "helm"
-  ]
+  "published": []
 }

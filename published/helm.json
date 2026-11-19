@@ -1,13 +1,13 @@
 {
-  "version": 4,
+  "version": 5,
   "trails": [],
-  "generatedAt": "2026-11-19T19:12:49.722Z",
+  "generatedAt": "2026-11-19T19:13:24.358Z",
   "tips": [
     {
       "id": "quando-nao-insistir",
       "version": 1,
       "title": "Quando não insistir hoje",
-      "oneLine": "Quando a tarefa pesa mais que o habitual, vale conferir se hoje cabe agir, ajustar ou descansar. (teste)",
+      "oneLine": "Quando a tarefa pesa mais que o habitual, vale conferir se hoje cabe agir, ajustar ou descansar.",
       "trailId": "uncomfortable",
       "when": {
         "if": "eu sentir que a tarefa pesa mais do que o normal",

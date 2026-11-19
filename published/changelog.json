@@ -1,5 +1,14 @@
 [
   {
+    "at": "2026-11-19T19:13:24.358Z",
+    "area": "helm",
+    "version": 5,
+    "sourceSha": "6b444da76c34c9bb39bbb9db2843aaee768d1f48",
+    "message": "rollback: conteudo restaurado de fd3813e",
+    "added": [],
+    "removed": []
+  },
+  {
     "at": "2026-11-19T19:12:49.722Z",
     "area": "helm",
     "version": 4,

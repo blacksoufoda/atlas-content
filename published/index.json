@@ -3,11 +3,11 @@
   "areas": {
     "helm": {
       "file": "helm.json",
-      "version": 4,
+      "version": 5,
       "items": 6,
-      "sha256": "04e7416ed0cd424dc85c314cd7c375a778b80f06567b3e9676cdfbaa5700e84f",
-      "updatedAt": "2026-11-19T19:12:49.722Z"
+      "sha256": "38363d46e4d77ae08699e49ecc2ffc2962027db870118b4f08af729b67411a66",
+      "updatedAt": "2026-11-19T19:13:24.358Z"
     }
   },
-  "generatedAt": "2026-11-19T19:12:49.722Z"
+  "generatedAt": "2026-11-19T19:13:24.358Z"
 }

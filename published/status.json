@@ -1,14 +1,9 @@
 {
-  "at": "2026-11-19T19:12:49.720Z",
+  "at": "2026-11-19T19:13:24.356Z",
   "ok": true,
   "paused": false,
-  "lastGoodAt": "2026-11-19T19:12:49.720Z",
-  "heartbeat": {
-    "schema": "atlas-content-heartbeat-v1",
-    "lastRunAt": "2026-11-19T19:12:27.448Z",
-    "summary": "Teste de ponta a ponta da Lyra: alterei uma dica.",
-    "changed": true
-  },
+  "lastGoodAt": "2026-11-19T19:13:24.356Z",
+  "heartbeat": null,
   "published": [
     "helm"
   ]

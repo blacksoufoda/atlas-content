@@ -1,1 +1,10 @@
-{"ok":true,"note":"aguardando primeira publicacao"}
+{
+  "at": "2026-11-19T19:10:12.898Z",
+  "ok": true,
+  "paused": false,
+  "lastGoodAt": "2026-11-19T19:10:12.898Z",
+  "heartbeat": null,
+  "published": [
+    "helm"
+  ]
+}

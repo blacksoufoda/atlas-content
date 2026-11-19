@@ -1,0 +1,178 @@
+{
+  "version": 3,
+  "trails": [],
+  "generatedAt": "2026-11-19T19:10:12.901Z",
+  "tips": [
+    {
+      "id": "quando-nao-insistir",
+      "version": 1,
+      "title": "Quando não insistir hoje",
+      "oneLine": "Quando a tarefa pesa mais que o habitual, vale conferir se hoje cabe agir, ajustar ou descansar.",
+      "trailId": "uncomfortable",
+      "when": {
+        "if": "eu sentir que a tarefa pesa mais do que o normal",
+        "then": "considero se cabe um passo mínimo, um ajuste, descanso ou ajuda"
+      },
+      "steps": [
+        "Pergunte-se se sono, cansaço, sobrecarga ou falta de clareza estão tornando a tarefa mais difícil.",
+        "Se quiser, escolha entre um passo pequeno, reduzir o escopo, descansar ou pedir ajuda.",
+        "Se parar, você pode anotar uma linha de retorno. Parar de forma consciente não cria dívida."
+      ],
+      "why": {
+        "text": "Esta é uma regra editorial do HELM, não uma intervenção testada isoladamente. Ela oferece alternativas à obrigação de insistir ou ao abandono automático.",
+        "certainty": "unassessed"
+      },
+      "careful": "Sofrimento ou cansaço persistente merecem acolhimento em UBS ou CAPS. Se houver risco imediato de se machucar, procure urgência ou ligue 192. Para apoio emocional, CVV 188.",
+      "minutes": 2,
+      "status": "approved",
+      "expiresAt": "2027-11-19",
+      "reviewedBy": "Luna",
+      "reviewedAt": "2026-11-19",
+      "approvedByUserAt": "2026-11-19"
+    },
+    {
+      "id": "comecar-pelo-artefato",
+      "version": 1,
+      "title": "Comece pelo artefato, não pela pesquisa",
+      "oneLine": "Se já souber o que precisa entregar, experimente tocar no trabalho antes de pesquisar mais.",
+      "trailId": "start",
+      "when": {
+        "if": "eu me pegar preparando, lendo ou pesquisando sem começar",
+        "then": "abro o arquivo onde o trabalho acontece e escrevo uma linha"
+      },
+      "steps": [
+        "Se houver um próximo passo claro, abra o arquivo, a folha ou o caderno em que a entrega será feita.",
+        "Experimente escrever uma linha provisória, nem que seja um título.",
+        "Se faltar informação essencial, anote a dúvida específica, pesquise apenas o necessário e retorne."
+      ],
+      "why": {
+        "text": "Às vezes a preparação se transforma em adiamento. Planos condicionais (se–então) têm evidência em vários contextos, mas os estudos não validam esta microdica específica nem demonstram sua eficácia para TDAH.",
+        "certainty": "limited",
+        "sourceUrl": "https://doi.org/10.1080/10463283.2024.2334563"
+      },
+      "careful": "Pesquisar é necessário quando faltam informações para agir. Se a tarefa estiver confusa, pedir uma orientação pontual pode ser o melhor primeiro passo.",
+      "minutes": 3,
+      "status": "approved",
+      "expiresAt": "2027-11-19",
+      "reviewedBy": "Luna",
+      "reviewedAt": "2026-11-19",
+      "approvedByUserAt": "2026-11-19"
+    },
+    {
+      "id": "nota-de-retorno",
+      "version": 1,
+      "title": "Deixe um bilhete para quem volta",
+      "oneLine": "Se puder, deixe uma frase com o próximo passo antes de interromper uma tarefa.",
+      "trailId": "return",
+      "when": {
+        "if": "eu precisar parar no meio de uma tarefa",
+        "then": "escrevo na hora onde parei e qual é o próximo passo"
+      },
+      "steps": [
+        "Antes de parar, se houver tempo, registre a próxima ação, por exemplo: “Falta revisar o segundo parágrafo”.",
+        "Deixe a nota em um lugar fácil de encontrar ao retornar.",
+        "Ao voltar, confira se o passo continua adequado; ajuste-o se necessário."
+      ],
+      "why": {
+        "text": "Pesquisas sobre memória de objetivos e interrupções apontam a importância de pistas para recuperar uma tarefa suspensa. Não demonstram que este bilhete específico reduza o tempo de retomada.",
+        "certainty": "limited",
+        "sourceUrl": "https://www.interruptions.net/literature/Altmann-CogSci02.pdf"
+      },
+      "careful": "Se a nota antiga não fizer mais sentido, troque por outra. Não precisa cumprir à risca.",
+      "minutes": 2,
+      "status": "approved",
+      "expiresAt": "2027-11-19",
+      "reviewedBy": "Luna",
+      "reviewedAt": "2026-11-19",
+      "approvedByUserAt": "2026-11-19"
+    },
+    {
+      "id": "pista-vontade-escolha",
+      "version": 1,
+      "title": "Notar a vontade antes de trocar",
+      "oneLine": "Antes de mudar de aplicativo, experimente notar a vontade e escolher o próximo passo.",
+      "trailId": "other_thing",
+      "when": {
+        "if": "eu sentir vontade de abrir outro aplicativo no meio do que escolhi",
+        "then": "paro 10 segundos, nomeio a vontade e escolho: trocar ou ficar mais 5 minutos"
+      },
+      "steps": [
+        "Se quiser, nomeie a vontade de abrir outro aplicativo e note o que aconteceu pouco antes.",
+        "Você pode anotar a ideia e continuar por mais alguns minutos, ou mudar conscientemente.",
+        "Se perceber que a pausa não ajuda, não é preciso insistir. A escolha continua sua."
+      ],
+      "why": {
+        "text": "Programas mais completos de atenção plena apresentaram benefícios em alguns estudos sobre tabagismo. Isso não prova que uma pausa de dez segundos reduza a troca de aplicativos ou melhore a execução de tarefas.",
+        "certainty": "limited",
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/21723049/"
+      },
+      "careful": "Uma necessidade urgente ou legítima justifica trocar imediatamente. Se um comportamento estiver causando prejuízo importante, buscar orientação profissional é uma opção.",
+      "minutes": 2,
+      "status": "approved",
+      "expiresAt": "2027-11-19",
+      "reviewedBy": "Luna",
+      "reviewedAt": "2026-11-19",
+      "approvedByUserAt": "2026-11-19"
+    },
+    {
+      "id": "lazer-um-trecho-so",
+      "version": 1,
+      "title": "Um trecho de filme, uma coisa só",
+      "oneLine": "Se quiser, experimente cinco minutos de atenção a uma atividade que você escolheu.",
+      "trailId": "other_thing",
+      "when": {
+        "if": "eu quiser assistir ou ouvir algo e sentir vontade de fazer três coisas ao mesmo tempo",
+        "then": "escolho 5 minutos, deixo só o essencial por perto e vejo o que acontece"
+      },
+      "steps": [
+        "Escolha um trecho curto de filme, música ou outra atividade; cinco minutos são apenas uma sugestão.",
+        "Mantenha acessíveis notificações essenciais e recursos necessários à segurança e acessibilidade.",
+        "Se aparecer vontade de trocar, observe-a se for confortável. Você pode voltar, adaptar ou parar."
+      ],
+      "why": {
+        "text": "Pesquisas sobre mídia digital mostram custos imediatos de atenção dividida, mas a evidência sobre efeitos duradouros é limitada. Não foi testado se este exercício de cinco minutos aumenta o prazer ou melhora a atenção.",
+        "certainty": "unassessed",
+        "sourceUrl": "https://pubmed.ncbi.nlm.nih.gov/42932800/"
+      },
+      "careful": "Encerre ou adapte se houver mal-estar ou sobrecarga sensorial. Se a perda de prazer persistir e prejudicar seu cotidiano, vale procurar acolhimento em um serviço de saúde.",
+      "minutes": 5,
+      "status": "approved",
+      "expiresAt": "2027-11-19",
+      "reviewedBy": "Luna",
+      "reviewedAt": "2026-11-19",
+      "approvedByUserAt": "2026-11-19"
+    },
+    {
+      "id": "notar-um-detalhe",
+      "version": 1,
+      "title": "Notar um detalhe, sem exigir prazer",
+      "oneLine": "Se quiser, perceba um detalhe de uma atividade, sem exigir que tenha sido prazeroso.",
+      "trailId": "start",
+      "when": {
+        "if": "eu terminar algo que costumava gostar de fazer",
+        "then": "paro 1 minuto e noto um detalhe, sem cobrar que seja bom"
+      },
+      "steps": [
+        "Escolha um detalhe que chamou sua atenção: uma cena, som, sabor, sensação ou companhia.",
+        "Pergunte como foi percebê-lo: agradável, neutro ou desagradável. Todas as respostas são válidas.",
+        "Registrar uma frase é opcional. Não há meta de sentir prazer."
+      ],
+      "why": {
+        "text": "Programas estruturados de saborear (savoring) tiveram benefícios médios no bem-estar em estudos randomizados, com muita variação entre eles. Isso não demonstra efeito desta observação isolada, e ela não substitui avaliação de saúde.",
+        "certainty": "limited",
+        "sourceUrl": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12968602/"
+      },
+      "careful": "Se a perda de interesse ou prazer se mantiver por semanas, sobretudo com sofrimento, procure acolhimento profissional. Para apoio emocional, CVV 188; em risco imediato, SAMU 192.",
+      "minutes": 1,
+      "status": "approved",
+      "expiresAt": "2027-11-19",
+      "reviewedBy": "Luna",
+      "reviewedAt": "2026-11-19",
+      "approvedByUserAt": "2026-11-19"
+    }
+  ],
+  "concepts": [],
+  "videos": [],
+  "dailyQueue": [],
+  "retired": []
+}

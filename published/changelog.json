@@ -1,0 +1,18 @@
+[
+  {
+    "at": "2026-11-19T19:10:12.901Z",
+    "area": "helm",
+    "version": 3,
+    "sourceSha": "fd3813e8901948782eb66660b82228c9610ab088",
+    "message": "[infra] inicio: pipeline de validacao e publicacao do conteudo",
+    "added": [
+      "tips:quando-nao-insistir",
+      "tips:comecar-pelo-artefato",
+      "tips:nota-de-retorno",
+      "tips:pista-vontade-escolha",
+      "tips:lazer-um-trecho-so",
+      "tips:notar-um-detalhe"
+    ],
+    "removed": []
+  }
+]

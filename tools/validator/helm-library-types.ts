@@ -189,6 +189,8 @@ export type HelmLibraryState = {
   picks: { trailId: HelmTrailId; at: string }[];
   /** Hides the daily tip card on Today. */
   hideTodayCard: boolean;
+  /** Day (local, YYYY-MM-DD) on which the user closed the daily tip card with the X. It returns the next day. */
+  hiddenTodayOn?: string;
   /** Shows drafts to reviewers. Off by default and always labelled. */
   reviewMode: boolean;
   /** Saved item IDs (tips, concepts, videos, or user items) in "Minha coleção". Optional for backwards compatibility. */

@@ -42,6 +42,13 @@ const readJson = (path, fallback = null) => (existsSync(path) ? JSON.parse(readF
 
 /** O conteudo sem os campos que o publicador carimba. Serve para saber se algo mudou de verdade. */
 const comparable = (pack) => JSON.stringify({ ...pack, version: 0, generatedAt: '' });
+const stripStamp = (text) => {
+  try {
+    return comparable(JSON.parse(text));
+  } catch {
+    return '';
+  }
+};
 
 export function check({ parser, contentDir, publishedDir, now = new Date() }) {
   const errors = [];
@@ -74,7 +81,8 @@ export function check({ parser, contentDir, publishedDir, now = new Date() }) {
     );
     report.areas[area] = {
       pack: parsed.pack,
-      changed: !previous || comparable(parsed.pack) !== comparable(previous),
+      raw: JSON.parse(text),
+      changed: !previous || stripStamp(text) !== comparable(previous),
       items: parsed.pack.tips.length + parsed.pack.concepts.length + parsed.pack.videos.length,
     };
   }
@@ -94,7 +102,8 @@ export function publish({ report, publishedDir, sourceSha = '', message = '', no
     if (!info.changed) continue;
     const previous = readJson(join(publishedDir, `${area}.json`), null);
     const version = Math.max((previous?.version ?? 0) + 1, MIN_VERSION);
-    const pack = { ...info.pack, version, generatedAt: now.toISOString() };
+    // Publica o proprio texto validado (com schema), so carimbando versao e data: o app le o que a validacao viu.
+    const pack = { ...info.raw, version, generatedAt: now.toISOString() };
     const text = `${JSON.stringify(pack, null, 2)}\n`;
     writeFileSync(join(publishedDir, `${area}.json`), text);
     index.areas[area] = {

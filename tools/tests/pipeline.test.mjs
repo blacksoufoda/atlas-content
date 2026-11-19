@@ -113,3 +113,18 @@ test('pausado: nao valida nem publica', () => {
   assert.equal(report.paused, true);
   assert.deepEqual(report.areas, {});
 });
+
+test('o arquivo publicado e aceito pelo parser do app (ida e volta)', () => {
+  const { content, published } = fresh();
+  const report = check({ parser, contentDir: content, publishedDir: published, now: NOW });
+  publish({ report, publishedDir: published, now: NOW });
+  const text = readFileSync(join(published, 'helm.json'), 'utf8');
+  const again = parser.parseContentPack(text, NOW);
+  assert.equal(again.ok, true, again.ok ? '' : again.error);
+  assert.equal(again.pack.version, MIN_VERSION);
+  assert.equal(JSON.parse(text).schema, 'atlas-helm-content-pack-v1');
+  assert.equal(again.pack.tips.length, report.areas.helm.pack.tips.length);
+  // publicar de novo sem mudar nada continua sem mudanca
+  const second = check({ parser, contentDir: content, publishedDir: published, now: NOW });
+  assert.equal(second.areas.helm.changed, false);
+});

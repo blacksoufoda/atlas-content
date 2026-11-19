@@ -11,6 +11,8 @@ import { fileURLToPath } from 'node:url';
 import { pathProblems } from './guards.mjs';
 import { check, loadParser, publish } from './pipeline.mjs';
 
+const PARSER = loadParser();
+
 const TOOLS = resolve(dirname(fileURLToPath(import.meta.url)), '..');
 const REPO = resolve(TOOLS, '..');
 const SOURCE = resolve(process.env.SOURCE_DIR ?? join(REPO, 'source'));
@@ -75,7 +77,7 @@ function main() {
       if (subjects.some((s) => !s.includes('[infra]'))) errors.push(...outside);
     }
   }
-  const report = check({ parser: loadParser(), contentDir: join(SOURCE, 'content'), publishedDir: PUBLISHED });
+  const report = check({ parser: PARSER, contentDir: join(SOURCE, 'content'), publishedDir: PUBLISHED });
   errors.push(...report.errors);
   const at = new Date().toISOString();
   const heartbeat = report.heartbeat ?? null;
@@ -101,6 +103,14 @@ function main() {
   let published = [];
   if (!report.paused) {
     published = publish({ report, publishedDir: PUBLISHED, sourceSha: head, message: run(SOURCE, 'log', '-1', '--pretty=%s') });
+    // Prova final: o que acabou de ser escrito tem que ser aceito pelo parser do app. Senao nada vai para main.
+    for (const area of published) {
+      const again = PARSER.parseContentPack(readFileSync(join(PUBLISHED, `${area}.json`), 'utf8'), new Date());
+      if (!again.ok) {
+        console.error(`publicado de ${area} nao passa no parser do app: ${again.error}`);
+        process.exit(1);
+      }
+    }
   }
   writeJson(join(PUBLISHED, 'status.json'), { at, ok: true, paused: report.paused, lastGoodAt: at, heartbeat, published });
   commitAndPush(REPO, `publica: ${published.length ? published.join(', ') : 'sem mudancas'} (${head.slice(0, 7)})`);

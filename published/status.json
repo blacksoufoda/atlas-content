@@ -1,8 +1,15 @@
 {
-  "at": "2026-11-19T19:12:13.841Z",
-  "ok": false,
-  "lastGoodAt": "2026-11-19T19:10:12.898Z",
-  "errors": [
-    "caminho nao permitido: evil.txt"
+  "at": "2026-11-19T19:12:49.720Z",
+  "ok": true,
+  "paused": false,
+  "lastGoodAt": "2026-11-19T19:12:49.720Z",
+  "heartbeat": {
+    "schema": "atlas-content-heartbeat-v1",
+    "lastRunAt": "2026-11-19T19:12:27.448Z",
+    "summary": "Teste de ponta a ponta da Lyra: alterei uma dica.",
+    "changed": true
+  },
+  "published": [
+    "helm"
   ]
 }

@@ -1,11 +1,10 @@
 {
-  "version": 6,
-  "trails": [],
-  "generatedAt": "2026-11-19T20:32:17.405Z",
+  "schema": "atlas-helm-content-pack-v1",
+  "version": 7,
+  "generatedAt": "2026-11-19T20:35:15.521Z",
   "tips": [
     {
       "id": "quando-nao-insistir",
-      "version": 1,
       "title": "Quando não insistir hoje",
       "oneLine": "Quando a tarefa pesa mais que o habitual, vale conferir se hoje cabe agir, ajustar ou descansar.",
       "trailId": "uncomfortable",
@@ -60,7 +59,6 @@
     },
     {
       "id": "nota-de-retorno",
-      "version": 1,
       "title": "Deixe um bilhete para quem volta",
       "oneLine": "Se puder, deixe uma frase com o próximo passo antes de interromper uma tarefa.",
       "trailId": "return",
@@ -88,7 +86,6 @@
     },
     {
       "id": "pista-vontade-escolha",
-      "version": 1,
       "title": "Notar a vontade antes de trocar",
       "oneLine": "Antes de mudar de aplicativo, experimente notar a vontade e escolher o próximo passo.",
       "trailId": "other_thing",
@@ -116,7 +113,6 @@
     },
     {
       "id": "lazer-um-trecho-so",
-      "version": 1,
       "title": "Um trecho de filme, uma coisa só",
       "oneLine": "Se quiser, experimente cinco minutos de atenção a uma atividade que você escolheu.",
       "trailId": "other_thing",
@@ -144,7 +140,6 @@
     },
     {
       "id": "notar-um-detalhe",
-      "version": 1,
       "title": "Notar um detalhe, sem exigir prazer",
       "oneLine": "Se quiser, perceba um detalhe de uma atividade, sem exigir que tenha sido prazeroso.",
       "trailId": "start",

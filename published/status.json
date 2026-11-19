@@ -1,8 +1,8 @@
 {
-  "at": "2026-11-19T19:10:52.905Z",
+  "at": "2026-11-19T19:12:13.841Z",
   "ok": false,
   "lastGoodAt": "2026-11-19T19:10:12.898Z",
   "errors": [
-    "dado pessoal: tip quando-nao-insistir: e-mail"
+    "caminho nao permitido: evil.txt"
   ]
 }

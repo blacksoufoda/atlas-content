@@ -1,0 +1,58 @@
+name: Validar e publicar conteudo
+
+# Roda AQUI (repo publico: Actions gratis) e le o repo privado da Luna por uma chave de deploy.
+# Consulta a cada 15 min; sem mudanca em content/ ele sai em segundos. Pode ser disparado a mao.
+on:
+  schedule:
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
+    inputs:
+      restore_sha:
+        description: 'Rollback: SHA de um commit anterior do repo fonte para restaurar content/ e republicar (vazio = so verificar)'
+        required: false
+        default: ''
+      force:
+        description: 'Reprocessar mesmo sem mudanca em content/ (1 = sim)'
+        required: false
+        default: ''
+  push:
+    branches: [main]
+    paths:
+      - 'tools/**'
+
+permissions:
+  contents: write
+
+concurrency:
+  group: publicar-conteudo
+  cancel-in-progress: false
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/checkout@v4
+        with:
+          repository: blacksoufoda/atlas-content-source
+          ssh-key: ${{ secrets.SOURCE_DEPLOY_KEY }}
+          path: source
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+      - name: Instalar e testar a propria validacao
+        working-directory: tools
+        run: |
+          npm ci --no-audit --no-fund
+          npm test
+      - name: Validar e publicar
+        env:
+          SOURCE_DIR: ${{ github.workspace }}/source
+          RESTORE_SHA: ${{ inputs.restore_sha }}
+          FORCE: ${{ inputs.force }}
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
+        run: node tools/scripts/ci.mjs

@@ -1,0 +1,13 @@
+{
+  "name": "atlas-content-source",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/",
+    "check": "node scripts/pipeline.mjs check",
+    "publish:local": "node scripts/pipeline.mjs publish"
+  },
+  "devDependencies": {
+    "esbuild": "0.25.12"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "schema": "atlas-content-control-v1",
+  "paused": false,
+  "pausedReason": "",
+  "userApprovedIds": [
+    "quando-nao-insistir",
+    "comecar-pelo-artefato",
+    "nota-de-retorno",
+    "pista-vontade-escolha",
+    "lazer-um-trecho-so",
+    "notar-um-detalhe"
+  ]
+}

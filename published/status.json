@@ -1,13 +1,15 @@
 {
-  "at": "2026-11-19T20:20:10.247Z",
+  "at": "2026-11-19T20:32:17.402Z",
   "ok": true,
   "paused": false,
-  "lastGoodAt": "2026-11-19T20:20:10.247Z",
+  "lastGoodAt": "2026-11-19T20:32:17.402Z",
   "heartbeat": {
     "schema": "atlas-content-heartbeat-v1",
-    "lastRunAt": "2026-11-19T20:18:18Z",
-    "summary": "Teste manual de acesso da Luna ao GitHub.",
-    "changed": false
+    "lastRunAt": "2026-11-19T20:25:15.740Z",
+    "summary": "Clareei a dica comecar-pelo-artefato: agora o primeiro gesto é abrir o arquivo e escrever uma linha.",
+    "changed": true
   },
-  "published": []
+  "published": [
+    "helm"
+  ]
 }

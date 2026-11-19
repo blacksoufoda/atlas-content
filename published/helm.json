@@ -1,7 +1,7 @@
 {
-  "version": 5,
+  "version": 6,
   "trails": [],
-  "generatedAt": "2026-11-19T19:13:24.358Z",
+  "generatedAt": "2026-11-19T20:32:17.405Z",
   "tips": [
     {
       "id": "quando-nao-insistir",
@@ -32,9 +32,9 @@
     },
     {
       "id": "comecar-pelo-artefato",
-      "version": 1,
+      "version": 2,
       "title": "Comece pelo artefato, não pela pesquisa",
-      "oneLine": "Se já souber o que precisa entregar, experimente tocar no trabalho antes de pesquisar mais.",
+      "oneLine": "Se já souber o que precisa fazer, experimente abrir o arquivo e escrever uma linha antes de pesquisar mais.",
       "trailId": "start",
       "when": {
         "if": "eu me pegar preparando, lendo ou pesquisando sem começar",
